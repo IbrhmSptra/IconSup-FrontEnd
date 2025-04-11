@@ -8,4 +8,37 @@
   --color-paragraph: #5f6c7b;
   --color-button: #3da9fc;
   --font-poppins: "Poppins";
+  --animate-floatBottom: floatingBottom ease-in-out 3s infinite;
+  --animate-floatTop: floatingTop ease-in-out 3s infinite;
+  --animate-floatSlow: floatingSlow ease-in-out 6s infinite;
+
+  @keyframes floatingBottom {
+    0%,
+    100% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  @keyframes floatingTop {
+    0%,
+    100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes floatingSlow {
+    0%,
+    100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
 }
